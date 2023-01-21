@@ -1,7 +1,10 @@
-const Footer = () => {
+import { NavLink } from "react-router-dom";
 
-    <
-    header >
+const Footer = () => {
+    return ( <
+        footer >
+        <
+        div className = "container" >
         <
         nav >
         <
@@ -9,20 +12,22 @@ const Footer = () => {
         <
         li >
         <
-        a href = "/" >
+        NavLink to = "/" >
         Главная <
-        /a> <
+        /NavLink> <
         /li> <
         li >
         <
-        a href = "/about" >
+        NavLink to = "/about" >
         О нас <
-        /a> <
+        /NavLink> <
         /li> <
         /ul> <
         /nav> <
-        /header>
+        /div> <
+        /footer>
 
+    )
 }
 
 export default Footer;
